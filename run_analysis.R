@@ -1,6 +1,7 @@
-# Set working directory
-setwd("C:/Users/HenryJoshua97/Documents/Getting-CleaningDataProject/UCI HAR Dataset")
 library(dplyr)
+
+# Set working directory
+# setwd()
 
 # Read metadata from text files
 features <- read.table("features.txt", stringsAsFactors = FALSE)
@@ -59,5 +60,4 @@ tidy_data <- mean_std_data %>%
 head(tidy_data)
 
 # Write output files
-write.table(mean_std_data, "cleaned_data.txt", row.names = FALSE)
 write.table(tidy_data, "tidy_data.txt", row.names = FALSE)
