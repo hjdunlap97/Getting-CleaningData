@@ -1,0 +1,64 @@
+---
+title: "Codebook"
+output: html_document
+date: "2026-04-26"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+# Data Structure
+
+The original dataset contained 561 variables. This dataset includes only variables representing averages of mean() and std() measurements.
+
+Each row of the final dataset represents the average of each variable for a specific combination of:
+Subject, Activity
+
+The tidy data is structured by one row per subject per activity.
+
+# Identifiers
+
+Subject:
+Integer identifier for each participant (ranges from 1 to 30)
+
+Activities:
+WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
+
+# Original variable naming
+t - indicates time domain signals
+f - indicates frequency domain signals
+
+Types of signals measured:
+BodyAcc - acceleration measured by the accelerometer (excluding gravity)
+GravityAcc - acceleration due to gravity
+BodyGyro - angular velocity measured by the gyroscope
+Magnitude - combined magnitude of signals across X, Y, Z axes
+
+Statistical Measures:
+Mean - mean value of signal
+Std - standard deviation of signal
+
+Axes:
+X, Y, Z - direction of the signal in 3D space
+
+# Data cleaning steps:
+1. Merged datasets
+2. Combined training and test datasets into one dataset
+3. Extracted relevant variables
+4. Selected only measurements containing mean() and std()
+5. Applied descriptive activity names
+6. Replaced numeric activity IDs with descriptive labels
+7. Renamed variables
+8. Removed special characters
+9. Expanded abbreviations
+10. Created tidy dataset
+11. Grouped data by subject and activity
+12. Calculated the average of each variable for each group
+13. Output File: tidy_data.txt - one row per subject per activity and average of each variable
+
+# Example cleaned variable names
+Time_BodyAcceleration_mean_Y
+
+#Final outputs of cleaned and tidy data in seperate txt files
+cleaned_data.txt - stores the extracted mean and standard deviation measurements
+tidy_data.txt - stores values in a single row per subject per activity
