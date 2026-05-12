@@ -10,6 +10,9 @@ Human Activity Recognition tidy data analysis collected from embedded phone iner
 # Data Source
 The Human Activity Recognition Using Smartphones Dataset from the UCI Machine Learning Repository.
 
+Citation: 
+Reyes-Ortiz, J., Anguita, D., Ghio, A., Oneto, L., & Parra, X. (2013). Human Activity Recognition Using Smartphones [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C54S4K.
+
 # How the Script Works
 Step 1: Load data and reads training and test datasets:
 Feature data (X), Activity labels (y), Subject identifiers
