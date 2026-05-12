@@ -27,11 +27,11 @@ Removes special characters and expands abbreviations
 Step 6: Create Tidy Dataset
 Groups data by subject and activity and calculates the average of each variable
 
-Step 7: Export Data `cleaned_data.txt` and `tidy_data.txt`
+Step 7: Export Data `tidy_data.txt`
 
 # How to Run
 
 Step 1: Download and unzip the dataset
 Step 2: Set the working directory in R to the dataset folder
 Step 3: Run: "run_analysis.R"
-Step 4: Output files (`cleaned_data.txt` and `tidy_data.txt`) will be created in the working directory
+Step 4: Output file (`tidy_data.txt`) will be created in the working directory
