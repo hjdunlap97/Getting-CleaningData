@@ -59,6 +59,5 @@ X, Y, Z - direction of the signal in 3D space
 # Example cleaned variable names
 Time_BodyAcceleration_mean_Y
 
-#Final outputs of cleaned and tidy data in seperate txt files
-cleaned_data.txt - stores the extracted mean and standard deviation measurements
+#Final outputs of tidy data as a txt file
 tidy_data.txt - stores values in a single row per subject per activity
