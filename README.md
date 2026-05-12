@@ -3,7 +3,6 @@ Human Activity Recognition tidy data analysis collected from embedded phone iner
 
 # Files Included
 * `run_analysis.R` — is the R script which executes data cleaning and organization
-* `cleaned_data.txt` — output merged dataset from the mean measurements and standard deviation measurements
 * `tidy_data.txt` — output tidy dataset with averages for each subject and activity
 * `README.md` — describes the project
 * `CodeBook.Rmd` — describes variables, data, and transformations
